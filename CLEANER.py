@@ -34,7 +34,7 @@ if st.button("Process CSV"):
         st.download_button(
             label="Download",
             data=df.to_csv(index=False).encode('utf-8'),
-            file_name="processed.csv",
+            file_name="cleaned-data.csv",
             mime="text/csv"
         )
     else:

@@ -1,6 +1,5 @@
 import pandas as pd
 import streamlit as st
-import csv
 
 def process_csv(csv_file):
     # Read the CSV file
@@ -18,8 +17,8 @@ def process_csv(csv_file):
 # Create a Streamlit app
 st.title("Remove Empty Rows and Duplicates from CSV")
 
-# Add a file uploader
-uploaded_file = st.file_uploader("Select a CSV file", type=["csv"])
+# Add a file uploader with CSV support
+uploaded_file = st.file_uploader("Select a CSV file", type=["csv", "CSV", "text/csv"])
 
 # Add a button to process the file
 if st.button("Process CSV"):
